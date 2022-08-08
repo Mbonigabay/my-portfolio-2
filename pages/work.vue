@@ -5,7 +5,7 @@
      <div class="projects">
          <div class="item">
              <a target="_blank" href="https://empeta.rw">
-                 <img src="img/projects/empeta.jpg" alt="Project">
+                 <img src="../assets/img/projects/empeta.jpg" alt="Project">
              </a>
              <a target="_blank" href="https://empeta.rw" class="btn-light">
                  <i class="fas fa-eye"></i> empeta.rw
@@ -16,7 +16,7 @@
          </div>
          <div class="item">
             <a target="_blank" href="https://mbonigabayusuf.netlify.app">
-                <img src="img/projects/port.jpg" alt="Project">
+                <img src="../assets/img/projects/port.jpg" alt="Project">
             </a>
             <a target="_blank" href="https://mbonigabayusuf.netlify.app" class="btn-light">
                 <i class="fas fa-eye"></i> mbonigabayusuf.netlify.app
