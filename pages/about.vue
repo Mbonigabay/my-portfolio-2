@@ -3,7 +3,7 @@
       <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
       <h2 class="sm-heading">Let me tell you a few things...</h2>
       <div class="about-info">
-        <img src="../assets/img/portrait-1.jpg" alt="Yusuf Mbonigaba" class="bio-image" />
+        <img src="img/portrait-1.jpg" alt="Yusuf Mbonigaba" class="bio-image" />
         <div class="bio">
           <h3 class="text-secondary">BIO</h3>
           <p>
