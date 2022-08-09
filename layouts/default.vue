@@ -9,6 +9,7 @@
     <TheHeader />
     <slot />
     <Script src="js/main.js" defer />
+    <Script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"  defer/>
     </Body>
   </Html>
 </template>
