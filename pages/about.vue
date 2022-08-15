@@ -11,9 +11,7 @@
       <div class="bio">
         <h3 class="text-secondary">BIO</h3>
         <p>
-          I am a software developer with a bachelor degree in Information
-          Technology with major in Software engineering and currently, working
-          as an application developer at REG/EUCL
+          {{bio}}
         </p>
       </div>
       <div v-bind:key="index" v-for="(experience, index) in experiences">
@@ -35,6 +33,6 @@ onMounted(() => {
 });
 
 const { data: experiences } = await useFetch("/api/experiences");
-
+const { data: bio } = await useFetch("/api/bio");
 </script>
 

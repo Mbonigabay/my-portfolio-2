@@ -20,7 +20,7 @@
 </template>
 <script setup>
 onMounted(() => {
-    showMenu = true;
-    toggleMenu()
+  showMenu = true;
+  toggleMenu();
 });
 </script>

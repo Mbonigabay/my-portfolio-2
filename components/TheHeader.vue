@@ -1,37 +1,32 @@
 <template>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <div :key="index" v-for="(navlink, index) in navlinks">
+          <li
+            v-if="navlink.status === 'active'"
+            class="nav-item"
+            :class="{ current: route.path === navlink.link }"
+          >
+            <nuxt-link :to="`${navlink.link}`" class="nav-link">
+              {{ navlink.name }}
+            </nuxt-link>
+          </li>
         </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <nuxt-link to="/" class="nav-link">
-              Home
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link to="about" class="nav-link">
-              About Me
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link to="work" class="nav-link">
-              My Work
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link to="contact" class="nav-link">
-              How To Reach Me
-            </nuxt-link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </ul>
+    </nav>
+  </header>
 </template>
+<script setup>
+const route = useRoute();
+const { data: navlinks } = await useFetch("/api/navlinks");
+</script>
