@@ -20,7 +20,7 @@
           <h5>{{experience.jobTitle}}</h5>
           <div v-html="$marked(experience.jobDescription)">
           </div>
-          <span style="font-weight: 600">JAN 2020- MARCH 2020</span>
+          <span style="font-weight: 600">{{experience.period}}</span>
         </div>
       </div>
     </div>
