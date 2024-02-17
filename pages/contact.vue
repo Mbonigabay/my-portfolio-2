@@ -13,7 +13,7 @@
       </div>
       <div>
         <span class="text-secondary">Address:</span>
-        KK 503 st Kicukiro
+        KK 174 st Kicukiro
       </div>
     </div>
   </main>

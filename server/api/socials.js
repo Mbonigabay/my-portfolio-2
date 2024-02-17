@@ -6,7 +6,7 @@ const socials = [
   {
     name: "Linkedin",
     icon: "fa-linkedin",
-    link: "https://www.linkedin.com/in/yusuf-mbonigaba-033691187",
+    link: "https://www.linkedin.com/in/yusuf-mbonigaba",
     status: "active"
   },
   {

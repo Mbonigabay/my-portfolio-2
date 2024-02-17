@@ -18,8 +18,7 @@
         <div class="job job-1">
           <h3>{{experience.companyName}}, {{experience.companyLocation}}</h3>
           <h5>{{experience.jobTitle}}</h5>
-          <div v-html="$marked(experience.jobDescription)">
-          </div>
+          <div v-html="$marked(experience.jobDescription)"/>
           <span style="font-weight: 600">{{experience.period}}</span>
         </div>
       </div>
