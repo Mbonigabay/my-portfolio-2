@@ -27,3 +27,30 @@ onMounted(() => {
 
 const { data: socials } = await useFetch("/api/socials");
 </script>
+
+<script>
+  export default {
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'This is the homepage for Yusuf Mbonigaba Portofolio'
+          },
+          {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Yusuf, Mbonigaba, Yusuf Mbonigaba, Software developer, Software engineer, Rwanda , Kigali'
+          },
+          {
+            hid: 'author',
+            name: 'author',
+            content: 'Yusuf Mbonigaba'
+          }
+        ]
+      }
+    }
+  }
+</script>
