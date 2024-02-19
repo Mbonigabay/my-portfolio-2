@@ -50,7 +50,6 @@ const { data: socials } = await useFetch("/api/socials");
             content: 'Yusuf Mbonigaba'
           },
           {
-            hid: 'google-site-verification',
             name: 'google-site-verification',
             content: '8xVi7BzoHKMXDV9BwHlh7jx4i1FDt8oLAJsBaIdZiCQ'
           }
