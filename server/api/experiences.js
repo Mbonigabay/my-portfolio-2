@@ -4,6 +4,7 @@ const router = createRouter();
 
 const experiences = [
   {
+    id: 1,
     companyName: "Nyabiheke coding school",
     companyLocation: "Gatsibo District",
     jobTitle: "Learning Facilitator",
@@ -11,24 +12,27 @@ const experiences = [
     period: "JAN 2020 - MARCH 2020"
   },
   {
+    id:2,
     companyName: "VNG Technology Limited",
     companyLocation: "Kigali City",
     jobTitle: "Fullstack software developer",
-    jobDescription: "- Led development and implementation of empeta.rw application at VNG Technology Ltd.\n- Developed a comprehensive software application using Bootstrap 4 for frontend and Spring MVC for backend.\n- Collaborated with a team of developers to ensure functionality, reliability, and user-friendliness.\n- Led design, development, and troubleshooting of new features.\n- Worked closely with Product Manager to meet requirements and deliver expected functionality.\n- Deployed application using Docker on Linux server through DigitalOcean.\n- Ensured proper configuration and optimization for deployment.",
+    jobDescription: "- Led development of empeta.rw, a wedding planning website at VNG Technology Ltd, using Spring MVC to deliver a reliable, user-friendly platform that met quality standards. \n- Configured and provisioned a VPS for UAT environment, orchestrating deployment of the application using Docker containerization and Docker Compose orchestration.",
     period: "MAY 2020 - OCT 2020"
   },
   {
+    id: 3,
     companyName: "Energy Utility Corporation Limited",
     companyLocation: "Kigali City",
     jobTitle: "Application developer",
-    jobDescription: "- Developed and led implementation of backend system for e-recruitment.reg.rw application at REG/EUCL.\n- Built REST API application using Spring Boot, focusing on robustness and scalability.\n- Designed and developed new features, troubleshooted issues, and optimized performance and reliability.\n- Deployed application on Linux server using Docker, ensuring proper configuration and optimization.\n- Monitored application performance and made necessary adjustments for smooth operation.\n- Collaborated with developers and stakeholders to meet requirements and deliver expected functionality.\n- Worked closely with Product Manager to ensure seamless integration with frontend and optimal user experience.\n- Managed various responsibilities from feature development to deployment and maintenance.",
+    jobDescription: "- Spearheaded the end-to-end backend development for REG/EUCL's critical e-recruitment.reg.rw application using [Java Spring Boot, PostgreSQL], encompassing system architecture design, API development, and database modeling to streamline the organization's hiring process. \n- Assisted the product team in  the design of application  and executed rigorous testing cycles to ensure the platform's stability and accuracy. \n- Configured and provisioned a VPS for UAT environment, orchestrating deployment of full-stack application components including backend services, frontend application, and PostgreSQL database using Docker containerization and Docker Compose orchestration.",
     period: "OCT 2020 - OCT 2021"
   },
   {
+    id: 4,
     companyName: "Irembo",
     companyLocation: "Kigali City",
     jobTitle: "Software Engineer",
-    jobDescription: "- Worked on improving and maintaining Irembo platform as a Full Stack Developer.\n- Added new services, fixed bugs, and refactored codebase to enhance performance, scalability, and maintainability.\n- Collaborated with development team to understand requirements and implement services using AngularJS and Spring Boot.\n- Troubleshooted and fixed bugs by identifying root causes, developing, testing, and deploying fixes.\n- Ensured platform's architectural integrity and ease of maintenance by refactoring codebase to improve quality, readability, and maintainability.\n- Worked with other developers to identify areas for improvement and implemented changes to enhance overall code structure.\n- Found role challenging and rewarding, contributing to significant impact on Rwandan lives through Irembo platform.\n- Leveraged diverse skills and technologies to add features, fix bugs, and improve system quality.",
+    jobDescription: "- Developed and launched key new services on the Irembo platform, including the E-provisional Driving License for Rwanda National Police and Voluntary Land Sale for the National Land Authority, collectively processing over a million applications annually, significantly enhancing public access to critical government functions. Also contributed to the Permit and Visa Transfer service for DGIE. \n- Ensured high platform reliability by proactively identifying and resolving bugs and critical incidents, and collaborating closely with TechOps and key external partners (including NPPA, DGIE, RSSB, RNP, and NLA) to maintain seamless integration and stability for essential government services. \n- Drove significant codebase enhancements by refactoring for improved performance, and maintainability, integrating crucial security features, and developing internal tools that streamlined day-to-day operations for the Customer Experience team.",
     period: "NOV 2021 - NOW"
   },
 ];
