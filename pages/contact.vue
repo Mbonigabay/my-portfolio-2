@@ -19,8 +19,10 @@
   </main>
 </template>
 <script setup>
+const showMenu = ref(false);
+
 onMounted(() => {
-  showMenu = true;
+  showMenu.value = true;
   toggleMenu();
 });
 </script>

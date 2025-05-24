@@ -3,10 +3,7 @@
     <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
     <h2 class="sm-heading">Check out some of my projects</h2>
     <div class="projects">
-      <div
-        v-bind:key="index"
-        v-for="(project, index) in projects"
-      >
+      <div v-bind:key="index" v-for="(project, index) in projects">
         <div class="item">
           <a target="_blank" :href="`${project.link}`">
             <img :src="`${project.screenshot}`" alt="Project" />
@@ -27,8 +24,10 @@
   </main>
 </template>
 <script setup>
+const showMenu = ref(false);
+
 onMounted(() => {
-  showMenu = true;
+  showMenu.value = true;
   toggleMenu();
 });
 

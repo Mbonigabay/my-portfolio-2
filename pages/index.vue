@@ -20,8 +20,10 @@
   </div>
 </template>
 <script setup>
+const showMenu = ref(false);
+
 onMounted(() => {
-  showMenu = true;
+  showMenu.value = true;
   toggleMenu();
 });
 
@@ -29,32 +31,33 @@ const { data: socials } = await useFetch("/api/socials");
 </script>
 
 <script>
-  export default {
-    head() {
-      return {
-        title: this.title,
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'This is the homepage for Yusuf Mbonigaba Portofolio'
-          },
-          {
-            hid: 'keywords',
-            name: 'keywords',
-            content: 'Yusuf, Mbonigaba, Yusuf Mbonigaba, Software developer, Software engineer, Rwanda , Kigali'
-          },
-          {
-            hid: 'author',
-            name: 'author',
-            content: 'Yusuf Mbonigaba'
-          },
-          {
-            name: 'google-site-verification',
-            content: '8xVi7BzoHKMXDV9BwHlh7jx4i1FDt8oLAJsBaIdZiCQ'
-          }
-        ]
-      }
-    }
-  }
+export default {
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "This is the homepage for Yusuf Mbonigaba Portofolio",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "Yusuf, Mbonigaba, Yusuf Mbonigaba, Software developer, Software engineer, Rwanda , Kigali",
+        },
+        {
+          hid: "author",
+          name: "author",
+          content: "Yusuf Mbonigaba",
+        },
+        {
+          name: "google-site-verification",
+          content: "8xVi7BzoHKMXDV9BwHlh7jx4i1FDt8oLAJsBaIdZiCQ",
+        },
+      ],
+    };
+  },
+};
 </script>
