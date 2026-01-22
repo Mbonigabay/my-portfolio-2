@@ -19,14 +19,8 @@
     </main>
   </div>
 </template>
+
 <script setup>
-const showMenu = ref(false);
-
-onMounted(() => {
-  showMenu.value = true;
-  toggleMenu();
-});
-
 const { data: socials } = await useFetch("/api/socials");
 </script>
 

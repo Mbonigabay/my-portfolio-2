@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # The service for your Express.js backend.
+  app:
+    image: mbonigabay/kigali-talent-backend:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - EMAIL_USERNAME=username
+      - EMAIL_ADDRESS=email
+      - EMAIL_PASSWORD=password
+      - JWT_SECRET='new-test-secret-for-debugging-12345'
+    networks:
+      - kigalitalent-network
+
+  # The service for your React front-end.
+  frontend:
+    image: mbonigabay/kigali-talent-frontend:latest
+    ports:
+      - "3000:80"
+    networks:
+      - kigalitalent-network
+
+# A shared network that allows the services to communicate.
+# This is crucial for the frontend to be able to make API calls to the backend.
+networks:
+  kigalitalent-network:
+    driver: bridge
